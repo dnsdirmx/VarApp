@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 
-class User extends Model implements
+class Responsable extends Model implements
     AuthenticatableContract,
     AuthorizableContract
 {
@@ -20,7 +20,7 @@ class User extends Model implements
      * @var array
      */
     protected $fillable = [
-        'name', 'email',
+        'nombre','adscripcion','telefono','activo','rol','email'
     ];
 
     /**
@@ -30,5 +30,12 @@ class User extends Model implements
      */
     protected $hidden = [
         'password',
-    ];
+	];
+	/**
+	 * The table associated with the model.
+	 *
+	 * @var string
+	 *                     
+	 */
+	    protected $table = 'responsables';
 }
