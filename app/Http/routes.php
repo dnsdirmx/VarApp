@@ -10,10 +10,18 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
-
-$app->get('/', function () use ($app) {
-    return $app->version();
+$app->get('/',function () use ($app) {
+		return view('varappmiento');
 });
 
 $app->post('auth/login', 'Auth\AuthController@postLogin');
+
+$app->group(['middleware' => 'auth'], function () use ($app) {
+	$app->group(['prefix' => 'api/v1'], function () use ($app) {
+		$app->get('/',function () use ($app) {
+			return view('varappmiento');
+		});
+	});
+
+});
 
