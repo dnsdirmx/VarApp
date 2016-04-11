@@ -12,7 +12,7 @@ class CreaTablaImagenEspecie extends Migration
      */
     public function up()
     {
-		Schema::create('flights', function (Blueprint $table)
+		Schema::create('imagen_especie', function (Blueprint $table)
 		{
 			$table->integer('imagen_id')->unsigned()->unique();
 			$table->integer('especie_id')->unsigned();
