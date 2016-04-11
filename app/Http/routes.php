@@ -91,6 +91,15 @@ $app->get('especimenes/{id}/imagenes','EspecimenController@getImagenes');
 $app->get('especimenes/{id}/reporte','EspecimenController@getReporte');
 $app->get('especimenes/{id}/especie','EspecimenController@getEspecie');
 
+
+$app->get('respuestas','RespuestaController@index');
+$app->post('respuestas','RespuestaController@create');
+$app->get('respuestas/{id}','RespuestaController@show');
+$app->put('respuestas/{id}','RespuestaController@update');
+$app->delete('respuestas/{id}','RespuestaController@destroy');
+$app->get('respuestas/{id}/pregunta','RespuestaController@getPregunta');
+$app->get('respuestas/{id}/siguiente','RespuestaController@getSiguiente');$app->post('respuestas/{id}/siguiente','RespuestaController@setSiguiente');
+
 $app->post('auth/login', 'Auth\AuthController@postLogin');
 
 $app->group(['middleware' => 'auth'], function () use ($app) {
