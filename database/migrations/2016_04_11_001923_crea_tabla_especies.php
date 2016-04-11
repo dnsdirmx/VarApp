@@ -20,7 +20,7 @@ class CreaTablaEspecies extends Migration
 		
 		    $table->timestamps();
 	
-			$table->foreign('orden_id')->references('id')->on('ordens');
+			$table->foreign('orden_id')->references('id')->on('ordenes');
 		});
 	}
 
