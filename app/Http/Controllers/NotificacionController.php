@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Notificacion;
 use App\Http\Requests;
 use Illuminate\Http\Response;
+use App\Helpers\VarAppiResponse;
 class NotificacionController extends Controller
 {
     public function index()

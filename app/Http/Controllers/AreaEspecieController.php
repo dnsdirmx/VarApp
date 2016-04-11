@@ -7,6 +7,7 @@ use Illuminate\Http\Response;
 use App\Http\Requests;
 use App\Area;
 
+use App\Helpers\VarAppiResponse;
 class AreaController extends Controller
 {
     /**

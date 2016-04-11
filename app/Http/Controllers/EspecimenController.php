@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Especimen;
 use App\Http\Requests;
 
+use App\Helpers\VarAppiResponse;
 class EspecimenController extends Controller
 {
     public function index()

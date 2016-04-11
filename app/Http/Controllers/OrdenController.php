@@ -7,6 +7,7 @@ use App\Orden;
 use App\Http\Requests;
 use Illuminate\Http\Response;
 
+use App\Helpers\VarAppiResponse;
 class OrdenController extends Controller
 {
     public function index()

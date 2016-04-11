@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Respuesta;
 use App\Http\Requests;
 use Illuminate\Http\Response;
+
+use App\Helpers\VarAppiResponse;
 class RespuestaController extends Controller
 {
     public function index()

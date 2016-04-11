@@ -7,6 +7,7 @@ use App\Especie;
 use App\Http\Requests;
 use Illuminate\Http\Response;
 
+use App\Helpers\VarAppiResponse;
 class EspecieController extends Controller
 {
     public function index()

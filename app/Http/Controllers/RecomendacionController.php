@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Recomendacion;
 use App\Http\Requests;
 use Illuminate\Http\Response;
+use App\Helpers\VarAppiResponse;
 class RecomendacionController extends Controller
 {
     public function index()

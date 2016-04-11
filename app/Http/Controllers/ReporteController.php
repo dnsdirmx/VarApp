@@ -7,6 +7,7 @@ use Illuminate\Http\Response;
 use App\Reporte;
 use App\Http\Requests;
 
+use App\Helpers\VarAppiResponse;
 class ReporteController extends Controller
 {
     public function index()

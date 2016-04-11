@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Pregunta;
 use App\Http\Requests;
 use Illuminate\Http\Response;
+use App\Helpers\VarAppiResponse;
 class PreguntaController extends Controller
 {
     public function index()
