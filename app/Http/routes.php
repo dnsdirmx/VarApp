@@ -32,6 +32,15 @@ $app->get('reportes/{id}/especimenes','ReporteController@getEspecimenes');
 $app->get('reportes/{id}/notificaciones','ReporteController@getNotificaciones');
 $app->get('reportes/{id}/informante','ReporteController@getInformante');
 
+$app->get('ordenes','OrdenController@index');
+$app->post('ordenes','OrdenController@create');
+$app->get('ordenes/{id}','OrdenController@show');
+$app->put('ordenes/{id}','OrdenController@update');
+$app->delete('ordenes/{id}','OrdenController@destroy');
+$app->get('ordenes/{id}/especies','OrdenController@getEspecies');
+$app->get('ordenes/{id}/recomendaciones','OrdenController@getRecomendaciones');
+$app->get('ordenes/{id}/imagenes','OrdenController@getImagenes');
+
 
 $app->post('auth/login', 'Auth\AuthController@postLogin');
 
