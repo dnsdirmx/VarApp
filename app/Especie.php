@@ -31,5 +31,10 @@ class Especie extends Model
 		return $this->belongsToMany('App\AreaEspecie','area_especie');
 	}
 
+	public function pregunta()
+	{
+		return $this->belongsToMany('App\RespuestaEspecie','respuesta_especie');
+	}
+
 }
 
