@@ -11,6 +11,7 @@ return array(
     'CreaTablaImagenEspecie' => $baseDir . '/database/migrations/2016_04_11_133039_crea_tabla_imagenEspecie.php',
     'CreaTablaImagenEspecimen' => $baseDir . '/database/migrations/2016_04_11_140225_crea_tabla_imagenEspecimen.php',
     'CreaTablaImagenOrden' => $baseDir . '/database/migrations/2016_04_11_135108_crea_tabla_imagenOrden.php',
+    'CreaTablaImagenRecomendacion' => $baseDir . '/database/migrations/2016_04_11_142003_crea_tabla_imagenRecomendacion.php',
     'CreaTablaImagenes' => $baseDir . '/database/migrations/2016_04_11_132307_crea_tabla_imagenes.php',
     'CreaTablaInformantes' => $baseDir . '/database/migrations/2016_04_09_162757_crea_tabla_informantes.php',
     'CreaTablaNotificacion' => $baseDir . '/database/migrations/2016_04_10_234910_crea_tabla_notificacion.php',

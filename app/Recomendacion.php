@@ -13,4 +13,9 @@ class Recomendacion extends Model
     {
 		return $this->BelongsTo('App\Orden');
 	}
+
+	public function imagenes()
+	{
+		return $this->belongsToMany('App\ImagenRecomendacion','imagen_recomendacion');
+	}
 }
