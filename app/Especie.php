@@ -24,9 +24,12 @@ class Especie extends Model
 
 	public function imagenes()
 	{
-		return $this->belongsToMany('App\Imagen','imagen_especie');
+		return $this->belongsToMany('App\ImagenEspecie','imagen_especie');
 	}
-
+	public function areas()
+	{
+		return $this->belongsToMany('App\AreaEspecie','area_especie');
+	}
 
 }
 
