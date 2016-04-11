@@ -26,4 +26,9 @@ class Reporte extends Model
 	        return $this->BelongsTo('App\Informante');
 	}
 
+	public function notificaciones()
+	{
+		return $this->hasMany('App\Notificacion');
+	}
+
 }
