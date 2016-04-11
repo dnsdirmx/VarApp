@@ -60,6 +60,12 @@ $app->get('responsables/{id}','ResponsableController@delete');
 $app->get('responsables/{id}/areas','ResponsableController@getAreas');
 $app->get('responsables/{id}/notificaciones','ResponsableController@getNotificaciones');
 
+$app->get('notificaciones','NotificacionController@index');
+$app->get('notificaciones/{id}','NotificacionController@show');
+$app->get('notificaciones/{id}','NotificacionController@destroy');
+$app->get('notificaciones/{id}/responsable','NotificacionController@getResponsable');
+$app->get('notificaciones/{id}/reporte','NotificacionController@getReporte');
+
 
 $app->post('auth/login', 'Auth\AuthController@postLogin');
 
