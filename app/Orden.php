@@ -20,4 +20,9 @@ class Orden extends Model
 	{
 		return $this->belongsToMany('App\ImagenOrden','imagen_orden');
 	}
+
+	public function recomendaciones()
+	{
+		return $this->hasMany('App\Recomendacion');
+	}
 }
