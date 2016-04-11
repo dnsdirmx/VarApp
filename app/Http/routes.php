@@ -52,6 +52,14 @@ $app->get('especies/{id}/orden','EspecieController@getOrden');
 $app->get('especies/{id}/respuesta','EspecieController@getRespuesta');
 $app->get('especies/{id}/imagenes','EspecieController@getImagenes');
 
+$app->get('responsables','ResponsableController@index');
+$app->post('responsables','ResponsableController@create');
+$app->get('responsables/{id}','ResponsableController@show');
+$app->get('responsables/{id}','ResponsableController@update');
+$app->get('responsables/{id}','ResponsableController@delete');
+$app->get('responsables/{id}/areas','ResponsableController@getAreas');
+$app->get('responsables/{id}/notificaciones','ResponsableController@getNotificaciones');
+
 
 $app->post('auth/login', 'Auth\AuthController@postLogin');
 
