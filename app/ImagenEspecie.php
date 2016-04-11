@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Imagen;
-class ImagenEspecie extends Model
+class ImagenEspecie extends Imagen
 {	
 	public function especie()
 	{
