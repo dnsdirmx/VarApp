@@ -14,6 +14,25 @@ $app->get('/',function () use ($app) {
 		return view('varappmiento');
 });
 
+
+$app->get('informantes','InformanteController@index');
+$app->get('informantes/{id}','InformanteController@show');
+$app->get('informantes/{id}/reportes','InformanteController@getReportes');
+$app->post('informantes','InformanteController@create');
+$app->put('informantes/{id}','InformanteController@update');
+$app->delete('informantes/{id}','InformanteController@destroy');
+
+
+$app->get('reportes','ReporteController@index');
+$app->post('reportes','ReporteController@create');
+$app->get('reportes/{id}','ReporteController@show');
+$app->put('reportes/{id}','ReporteController@update');
+$app->delete('reportes/{id}','ReporteController@destroy');
+$app->get('reportes/{id}/especimenes','ReporteController@getEspecimenes');
+$app->get('reportes/{id}/notificaciones','ReporteController@getNotificaciones');
+$app->get('reportes/{id}/informante','ReporteController@getInformante');
+
+
 $app->post('auth/login', 'Auth\AuthController@postLogin');
 
 $app->group(['middleware' => 'auth'], function () use ($app) {
