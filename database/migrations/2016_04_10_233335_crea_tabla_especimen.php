@@ -12,10 +12,8 @@ class CreaTablaEspecimen extends Migration
 		    $table->string('estado');
 		    $table->string('sexo');
 		    $table->integer('especie_id')->unsigned();
-		    $table->integer('imagen_id')->unsigned();
 		    $table->integer('reporte_id')->unsigned();
 		    $table->timestamps();
-		    $table->foreign('imagen_id')->references('id')->on('imagens');
 		    $table->foreign('especie_id')->references('id')->on('especies');
 		    $table->foreign('reporte_id')->references('id')->on('reportes');
 		});

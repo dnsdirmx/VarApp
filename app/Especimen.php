@@ -13,6 +13,10 @@ class Especimen extends Model
     public function reporte()
     {
         return $this->BelongsTo('App\Reporte');
+	}
 
+	public function especie()
+	{
+		return $this->BelongsTo('App\Especie');
 	}
 }

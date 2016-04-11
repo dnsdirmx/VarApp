@@ -14,18 +14,16 @@ class Reporte extends Model
     protected $fillable = [
 	        'latitud','longitud','precision','creadoDispositivo','observaciones',
 		    ];
- 
-	public function notificacion()
+
+	protected $table = 'reportes';
+
+    public function especimenes()
     {
-	        return $this->hasOne('App\Notiicacion');
-	    }
-    public function mamiferos()
-    {
-	        return $this->hasMany('App\Mamifero');
+	        return $this->hasMany('App\Especimen');
 	    }
     public function informante()
     {
 	        return $this->BelongsTo('App\Informante');
-	    }
+	}
 
 }
