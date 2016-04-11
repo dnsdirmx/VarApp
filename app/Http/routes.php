@@ -74,7 +74,7 @@ $app->delete('recomendaciones/{id}','RecomendacionController@destroy');
 $app->get('recomendaciones/{id}/orden','RecomendacionController@getOrden');
 $app->get('recomendaciones/{id}/imagenes','RecomendacionController@getImagenes');
 
-$app->get('preguntas','PreguntaControllerr@index');
+$app->get('preguntas','PreguntaController@index');
 $app->get('preguntas/{id}','PreguntaController@show');
 $app->post('preguntas/{id}','PreguntaController@create');
 $app->put('preguntas/{id}','PreguntaController@update');
@@ -82,7 +82,14 @@ $app->delete('preguntas/{id}','PreguntaController@destroy');
 $app->get('preguntas/{id}/respuestas','PreguntaController@getRespuestas');
 $app->get('preguntas/{id}/imagenes','PreguntaController@getImagenes');
 
-
+$app->get('especimenes','EspecimenController@index');
+$app->post('especimenes','EspecimenController@create');
+$app->get('especimenes/{id}','EspecimenController@show');
+$app->put('especimenes/{id}','EspecimenController@update');
+$app->delete('especimenes/{id}','EspecimenController@destroy');
+$app->get('especimenes/{id}/imagenes','EspecimenController@getImagenes');
+$app->get('especimenes/{id}/reporte','EspecimenController@getReporte');
+$app->get('especimenes/{id}/especie','EspecimenController@getEspecie');
 
 $app->post('auth/login', 'Auth\AuthController@postLogin');
 
