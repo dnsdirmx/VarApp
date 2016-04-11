@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'CreaTablaEspecies' => $baseDir . '/database/migrations/2016_04_11_001923_crea_tabla_especies.php',
     'CreaTablaEspecimen' => $baseDir . '/database/migrations/2016_04_11_002023_crea_tabla_especimen.php',
+    'CreaTablaImagenes' => $baseDir . '/database/migrations/2016_04_11_132307_crea_tabla_imagenes.php',
     'CreaTablaInformantes' => $baseDir . '/database/migrations/2016_04_09_162757_crea_tabla_informantes.php',
     'CreaTablaNotificacion' => $baseDir . '/database/migrations/2016_04_10_234910_crea_tabla_notificacion.php',
     'CreaTablaOrdenes' => $baseDir . '/database/migrations/2016_04_11_000755_crea_tabla_ordenes.php',
