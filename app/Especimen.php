@@ -19,4 +19,8 @@ class Especimen extends Model
 	{
 		return $this->BelongsTo('App\Especie');
 	}
+	public function imagen()
+	{
+		return $this->belongsToMany('App\Imagen','imagen_especimen');
+	}
 }
