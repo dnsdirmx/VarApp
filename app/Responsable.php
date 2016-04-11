@@ -27,4 +27,9 @@ class Responsable extends Model implements
 	{
 		return $this->belongsToMany('App\AreaResponsable','area_responsable');
 	}
+
+	public function notificaciones()
+	{
+		return $this->hasMany('App\Notificacion');
+	}
 }
