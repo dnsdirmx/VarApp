@@ -11,4 +11,9 @@ class Informante extends Model
 		];
 
 	protected $table = 'responsables';
+
+	public function reportes()
+	{
+		return $this->hasMany('App\Reporte');
+	}
 }
