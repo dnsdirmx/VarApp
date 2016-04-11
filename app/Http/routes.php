@@ -98,7 +98,15 @@ $app->get('respuestas/{id}','RespuestaController@show');
 $app->put('respuestas/{id}','RespuestaController@update');
 $app->delete('respuestas/{id}','RespuestaController@destroy');
 $app->get('respuestas/{id}/pregunta','RespuestaController@getPregunta');
-$app->get('respuestas/{id}/siguiente','RespuestaController@getSiguiente');$app->post('respuestas/{id}/siguiente','RespuestaController@setSiguiente');
+$app->get('respuestas/{id}/siguiente','RespuestaController@getSiguiente');
+$app->post('respuestas/{id}/siguiente','RespuestaController@setSiguiente');
+
+$app->get('areas','AreaController@index');
+$app->post('areas','AreaController@create');
+$app->get('areas','AreaController@show');
+$app->put('areas','AreaController@update');
+$app->delete('areas','AreaController@destroy');
+
 
 $app->post('auth/login', 'Auth\AuthController@postLogin');
 
