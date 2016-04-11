@@ -12,6 +12,7 @@ return array(
     'CreaTablaNotificacion' => $baseDir . '/database/migrations/2016_04_10_234910_crea_tabla_notificacion.php',
     'CreaTablaOrdenes' => $baseDir . '/database/migrations/2016_04_11_000755_crea_tabla_ordenes.php',
     'CreaTablaPregunta' => $baseDir . '/database/migrations/2016_04_11_124318_crea_tabla_pregunta.php',
+    'CreaTablaRecomendaciones' => $baseDir . '/database/migrations/2016_04_11_130800_crea_tabla_recomendaciones.php',
     'CreaTablaReportes' => $baseDir . '/database/migrations/2016_04_10_232623_crea_tabla_reportes.php',
     'CreaTablaRespuesta' => $baseDir . '/database/migrations/2016_04_11_125855_crea_tabla_respuesta.php',
     'CreateResponsablesTable' => $baseDir . '/database/migrations/2016_04_07_132602_create_responsables_table.php',
