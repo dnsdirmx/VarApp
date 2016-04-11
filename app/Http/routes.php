@@ -55,17 +55,24 @@ $app->get('especies/{id}/imagenes','EspecieController@getImagenes');
 $app->get('responsables','ResponsableController@index');
 $app->post('responsables','ResponsableController@create');
 $app->get('responsables/{id}','ResponsableController@show');
-$app->get('responsables/{id}','ResponsableController@update');
-$app->get('responsables/{id}','ResponsableController@delete');
+$app->put('responsables/{id}','ResponsableController@update');
+$app->delete('responsables/{id}','ResponsableController@delete');
 $app->get('responsables/{id}/areas','ResponsableController@getAreas');
 $app->get('responsables/{id}/notificaciones','ResponsableController@getNotificaciones');
 
 $app->get('notificaciones','NotificacionController@index');
 $app->get('notificaciones/{id}','NotificacionController@show');
-$app->get('notificaciones/{id}','NotificacionController@destroy');
+$app->delete('notificaciones/{id}','NotificacionController@destroy');
 $app->get('notificaciones/{id}/responsable','NotificacionController@getResponsable');
 $app->get('notificaciones/{id}/reporte','NotificacionController@getReporte');
 
+$app->get('recomendaciones','RecomendacionController@index');
+$app->get('recomendaciones','RecomendacionController@show');
+$app->post('recomendaciones','RecomendacionController@create');
+$app->put('recomendaciones','RecomendacionController@update');
+$app->delete('recomendaciones','RecomendacionController@destroy');
+$app->get('recomendaciones','RecomendacionController@getOrden');
+$app->get('recomendaciones','RecomendacionController@getImagenes');
 
 $app->post('auth/login', 'Auth\AuthController@postLogin');
 
