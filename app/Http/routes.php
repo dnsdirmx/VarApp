@@ -107,6 +107,12 @@ $app->get('areas','AreaController@show');
 $app->put('areas','AreaController@update');
 $app->delete('areas','AreaController@destroy');
 
+$app->post('imagenes/', 'ImagenController@create'); //envia el archivo de imagen y regresa el json de la imagen 
+$app->put('imagenes/{id}', 'ImagenController@update'); //actualiza los datos de la imagen por json
+$app->put('imagenes/{id}/imagen','ImagenController@updateFile'); //actualiza el  archivo de la imagen
+$app->get('imagenes/{id}', 'ImagenController@show');    //regresajson de la imagen 
+$app->get('imagenes/{id}/imagen', 'ImagenController@showFile');    // regresa el archivo       
+$app->delete('imagenes/{id}', 'ImagenController@destroy'); //elimina los datos y el arhivo de la imagen
 
 $app->post('auth/login', 'Auth\AuthController@postLogin');
 
