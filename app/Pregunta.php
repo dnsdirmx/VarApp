@@ -16,4 +16,9 @@ class Pregunta extends Model
 	{
 		return $this->hasMany('App\Respuesta');
 	}
+
+	public function imagenes()
+	{
+		return $this->belongsToMany('App\ImagenPregunta','imagen_pregunta');
+	}
 }
