@@ -10,4 +10,10 @@ class Pregunta extends Model
 	        'pregunta','inicial',
 		];
 
+	protected $table = 'preguntas';
+
+	public function respuestas()
+	{
+		return $this->hasMany('App\Respuesta');
+	}
 }

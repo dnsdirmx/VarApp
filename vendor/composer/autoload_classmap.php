@@ -6,8 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CreaTablaEspecies' => $baseDir . '/database/migrations/2016_04_11_001923_crea_tabla_especies.php',
+    'CreaTablaEspecimen' => $baseDir . '/database/migrations/2016_04_11_002023_crea_tabla_especimen.php',
     'CreaTablaInformantes' => $baseDir . '/database/migrations/2016_04_09_162757_crea_tabla_informantes.php',
+    'CreaTablaNotificacion' => $baseDir . '/database/migrations/2016_04_10_234910_crea_tabla_notificacion.php',
+    'CreaTablaOrdenes' => $baseDir . '/database/migrations/2016_04_11_000755_crea_tabla_ordenes.php',
+    'CreaTablaPregunta' => $baseDir . '/database/migrations/2016_04_11_124318_crea_tabla_pregunta.php',
     'CreaTablaReportes' => $baseDir . '/database/migrations/2016_04_10_232623_crea_tabla_reportes.php',
+    'CreaTablaRespuesta' => $baseDir . '/database/migrations/2016_04_11_125855_crea_tabla_respuesta.php',
     'CreateResponsablesTable' => $baseDir . '/database/migrations/2016_04_07_132602_create_responsables_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'ExampleTest' => $baseDir . '/tests/ExampleTest.php',
