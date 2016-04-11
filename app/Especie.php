@@ -22,5 +22,11 @@ class Especie extends Model
 		return $this->hasMany('App\Especimen');
 	}
 
+	public function imagenes()
+	{
+		return $this->belongsToMany('App\Imagen','imagen_especie');
+	}
+
+
 }
 
