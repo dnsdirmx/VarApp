@@ -15,5 +15,9 @@ class Orden extends Model
     public function especies()
     {
         return $this->hasMany('App\Especie');
-    }
+	}
+	public function imagenes()
+	{
+		return $this->belongsToMany('App\ImagenOrden','imagen_orden');
+	}
 }

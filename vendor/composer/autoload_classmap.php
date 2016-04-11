@@ -9,6 +9,7 @@ return array(
     'CreaTablaEspecies' => $baseDir . '/database/migrations/2016_04_11_001923_crea_tabla_especies.php',
     'CreaTablaEspecimen' => $baseDir . '/database/migrations/2016_04_11_002023_crea_tabla_especimen.php',
     'CreaTablaImagenEspecie' => $baseDir . '/database/migrations/2016_04_11_133039_crea_tabla_imagenEspecie.php',
+    'CreaTablaImagenOrden' => $baseDir . '/database/migrations/2016_04_11_135108_crea_tabla_imagenOrden.php',
     'CreaTablaImagenes' => $baseDir . '/database/migrations/2016_04_11_132307_crea_tabla_imagenes.php',
     'CreaTablaInformantes' => $baseDir . '/database/migrations/2016_04_09_162757_crea_tabla_informantes.php',
     'CreaTablaNotificacion' => $baseDir . '/database/migrations/2016_04_10_234910_crea_tabla_notificacion.php',
