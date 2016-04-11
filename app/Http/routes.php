@@ -67,12 +67,22 @@ $app->get('notificaciones/{id}/responsable','NotificacionController@getResponsab
 $app->get('notificaciones/{id}/reporte','NotificacionController@getReporte');
 
 $app->get('recomendaciones','RecomendacionController@index');
-$app->get('recomendaciones','RecomendacionController@show');
+$app->get('recomendaciones/{id}','RecomendacionController@show');
 $app->post('recomendaciones','RecomendacionController@create');
-$app->put('recomendaciones','RecomendacionController@update');
-$app->delete('recomendaciones','RecomendacionController@destroy');
-$app->get('recomendaciones','RecomendacionController@getOrden');
-$app->get('recomendaciones','RecomendacionController@getImagenes');
+$app->put('recomendaciones/{id}','RecomendacionController@update');
+$app->delete('recomendaciones/{id}','RecomendacionController@destroy');
+$app->get('recomendaciones/{id}/orden','RecomendacionController@getOrden');
+$app->get('recomendaciones/{id}/imagenes','RecomendacionController@getImagenes');
+
+$app->get('preguntas','PreguntaControllerr@index');
+$app->get('preguntas/{id}','PreguntaController@show');
+$app->post('preguntas/{id}','PreguntaController@create');
+$app->put('preguntas/{id}','PreguntaController@update');
+$app->delete('preguntas/{id}','PreguntaController@destroy');
+$app->get('preguntas/{id}/respuestas','PreguntaController@getRespuestas');
+$app->get('preguntas/{id}/imagenes','PreguntaController@getImagenes');
+
+
 
 $app->post('auth/login', 'Auth\AuthController@postLogin');
 
