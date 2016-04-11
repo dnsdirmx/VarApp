@@ -21,4 +21,9 @@ class Pregunta extends Model
 	{
 		return $this->belongsToMany('App\ImagenPregunta','imagen_pregunta');
 	}
+
+	public function respuestaAnterior()
+	{
+		return $this->belongsToMany('App\Respuesta','respuesta_pregunta');
+	}
 }

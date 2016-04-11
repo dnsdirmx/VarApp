@@ -22,4 +22,9 @@ class Responsable extends Model implements
         'password',
 	];
 	protected $table = 'responsables';
+
+	public function areas()
+	{
+		return $this->belongsToMany('App\AreaResponsable','area_responsable');
+	}
 }
