@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'CreaTablaArea' => $baseDir . '/database/migrations/2016_04_11_143437_crea_tabla_area.php',
     'CreaTablaAreaEspecie' => $baseDir . '/database/migrations/2016_04_11_144121_crea_tabla_areaEspecie.php',
+    'CreaTablaAreaResponsable' => $baseDir . '/database/migrations/2016_04_11_144914_crea__tabla_areaResponsable.php',
     'CreaTablaEspecies' => $baseDir . '/database/migrations/2016_04_11_001923_crea_tabla_especies.php',
     'CreaTablaEspecimen' => $baseDir . '/database/migrations/2016_04_11_002023_crea_tabla_especimen.php',
     'CreaTablaImagenEspecie' => $baseDir . '/database/migrations/2016_04_11_133039_crea_tabla_imagenEspecie.php',
@@ -23,6 +24,7 @@ return array(
     'CreaTablaRecomendaciones' => $baseDir . '/database/migrations/2016_04_11_130800_crea_tabla_recomendaciones.php',
     'CreaTablaReportes' => $baseDir . '/database/migrations/2016_04_10_232623_crea_tabla_reportes.php',
     'CreaTablaRespuesta' => $baseDir . '/database/migrations/2016_04_11_125855_crea_tabla_respuesta.php',
+    'CreaTablaRespuestaPregunta' => $baseDir . '/database/migrations/2016_04_11_145430_crea_tabla_respuestaPregunta.php',
     'CreateResponsablesTable' => $baseDir . '/database/migrations/2016_04_07_132602_create_responsables_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'ExampleTest' => $baseDir . '/tests/ExampleTest.php',
